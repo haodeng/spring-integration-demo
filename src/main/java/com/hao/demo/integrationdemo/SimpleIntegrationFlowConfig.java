@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 
 @Configuration
 @EnableIntegration
-public class IntegrationFlowConfig {
+public class SimpleIntegrationFlowConfig {
     @Bean
     Supplier<String> fakeAddress() {
         return () -> new Faker().address().fullAddress();
